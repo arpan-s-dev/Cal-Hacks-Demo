@@ -2,6 +2,18 @@
 
 Miniature applicant + organizer portal for the Cal Hacks FA26 Tech Team take-home. Two tracks (hacker / mentor), organizer grading, and a `/status` DecisionCard.
 
+## Deploy in 60 seconds (Vercel)
+
+1. Open: https://vercel.com/new/clone?repository-url=https://github.com/arpan-s-dev/Cal-Hacks-Demo&env=NEXT_PUBLIC_SUPABASE_URL&env=NEXT_PUBLIC_SUPABASE_ANON_KEY&project-name=cal-hacks-admissions&repository-name=Cal-Hacks-Demo
+2. Paste the two Supabase API values (Project Settings → API):
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+3. Deploy. Then in Supabase SQL editor run `supabase/migrations/001_init.sql`, turn off Auth “Confirm email”, sign up, and promote one organizer:
+
+```sql
+update public.profiles set role = 'organizer' where email = 'you@example.com';
+```
+
 ## 1. Setup
 
 1. Create a [Supabase](https://supabase.com) project.
