@@ -4,7 +4,12 @@ Miniature applicant + organizer portal for the Cal Hacks FA26 Tech Team take-hom
 
 ## Deploy in 60 seconds (Vercel)
 
-1. Open: https://vercel.com/new/clone?repository-url=https://github.com/arpan-s-dev/Cal-Hacks-Demo&env=NEXT_PUBLIC_SUPABASE_URL&env=NEXT_PUBLIC_SUPABASE_ANON_KEY&project-name=cal-hacks-admissions&repository-name=Cal-Hacks-Demo
+**Named project (this is the submission URL):**
+https://vercel.com/new/clone?repository-url=https://github.com/arpan-s-dev/Cal-Hacks-Demo&project-name=cal-hacks-admissions&repository-name=Cal-Hacks-Demo&env=NEXT_PUBLIC_SUPABASE_URL&env=NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+That creates project `cal-hacks-admissions` and a public URL like `https://cal-hacks-admissions.vercel.app` (or `https://cal-hacks-admissions-<your-vercel-user>.vercel.app`).
+
+1. Click the link, stay logged into Vercel, keep the project name `cal-hacks-admissions`.
 2. Paste the two Supabase API values (Project Settings → API):
    - `NEXT_PUBLIC_SUPABASE_URL`
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
